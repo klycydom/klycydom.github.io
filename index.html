@@ -1,0 +1,1808 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>九一蘑菇_九一蘑菇麻花官方视频门户_原创剧情短片与生活影像</title>
+<meta name="description" content="九一蘑菇麻花官方网站，专注原创剧情短片、生活影像与创作者社区的企业级视频门户，提供高清正版内容与开放投稿通道。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5d4b'/%3E%3Ccircle cx='24' cy='26' r='9' fill='%23f3e6c8'/%3E%3Cpath d='M20 40h24a6 6 0 0 1 6 6v6H20z' fill='%23e8b96a'/%3E%3Cpath d='M14 52h36' stroke='%23f3e6c8' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --jm-deep:#1f3d33;
+    --jm-deep-2:#2f5d4b;
+    --jm-cream:#f7f3e7;
+    --jm-sand:#e9dfc6;
+    --jm-amber:#d99b3d;
+    --jm-amber-soft:#f0c983;
+    --jm-ink:#1e241f;
+    --jm-muted:#5d6b62;
+    --jm-line:#d8cfb6;
+    --jm-radius:14px;
+    --jm-shadow:0 10px 30px rgba(31,61,51,.12);
+    --jm-max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--jm-cream);
+    color:var(--jm-ink);
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+  .jm-container{width:100%;max-width:var(--jm-max);margin:0 auto;padding:0 22px;}
+  .jm-anchor{scroll-margin-top:120px;}
+
+  /* ===== 吸顶公告 + 页头 ===== */
+  .jm-topstick{
+    position:sticky;
+    top:0;
+    z-index:60;
+    background:var(--jm-cream);
+    box-shadow:0 2px 0 rgba(31,61,51,.08);
+  }
+  .jm-notice{
+    background:linear-gradient(90deg,var(--jm-deep),var(--jm-deep-2));
+    color:#f4eeda;
+    font-size:13px;
+  }
+  .jm-notice-inner{
+    display:flex;align-items:center;gap:12px;
+    padding:8px 0;
+    overflow:hidden;
+  }
+  .jm-notice-tag{
+    flex:none;
+    background:var(--jm-amber);
+    color:#241a08;
+    font-weight:700;
+    font-size:12px;
+    padding:1px 9px;
+    border-radius:999px;
+    letter-spacing:.04em;
+  }
+  .jm-notice-list{
+    display:flex;gap:32px;
+    overflow:hidden;
+    white-space:nowrap;
+    font-size:12.5px;
+    color:#dbe6d9;
+  }
+  .jm-notice-list span{display:inline-flex;align-items:center;gap:6px;flex:none;}
+  .jm-notice-list b{color:var(--jm-amber-soft);font-weight:600;}
+
+  .jm-header{
+    background:rgba(247,243,231,.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--jm-line);
+  }
+  .jm-header-inner{
+    display:flex;align-items:center;gap:20px;
+    min-height:66px;
+  }
+  .jm-brand{display:flex;align-items:center;gap:10px;flex:none;}
+  .jm-brand-mark{
+    width:38px;height:38px;border-radius:11px;
+    background:radial-gradient(circle at 30% 30%,#f3e6c8,#e8b96a 60%,#cf8a2e);
+    display:grid;place-items:center;
+    font-weight:800;color:#3a2a10;font-size:15px;
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,.4);
+  }
+  .jm-brand-name{font-size:18px;font-weight:800;letter-spacing:.02em;}
+  .jm-brand-name em{font-style:normal;color:var(--jm-deep-2);}
+  .jm-brand-sub{display:block;font-size:10.5px;color:var(--jm-muted);letter-spacing:.22em;font-weight:500;}
+
+  .jm-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap;}
+  .jm-nav a{
+    font-size:14px;color:#33463c;padding:8px 11px;border-radius:9px;
+    transition:background .2s,color .2s;font-weight:500;
+  }
+  .jm-nav a:hover{background:#ece4cf;color:var(--jm-deep);}
+
+  .jm-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+  .jm-search{
+    display:flex;align-items:center;gap:6px;
+    background:#fff;border:1px solid var(--jm-line);
+    border-radius:999px;padding:5px 6px 5px 14px;
+    transition:box-shadow .2s,border-color .2s;
+  }
+  .jm-search:focus-within{border-color:var(--jm-deep-2);box-shadow:0 0 0 3px rgba(47,93,75,.14);}
+  .jm-search input{
+    border:0;outline:0;background:transparent;width:150px;font-size:13.5px;color:var(--jm-ink);
+  }
+  .jm-search-btn{
+    background:var(--jm-deep-2);color:#f5f0dd;border-radius:999px;
+    padding:5px 14px;font-size:13px;font-weight:600;transition:background .2s;
+  }
+  .jm-search-btn:hover{background:var(--jm-deep);}
+  .jm-search-hint{
+    display:none;font-size:12.5px;color:var(--jm-deep-2);
+    background:#e4edE4;border-radius:8px;padding:6px 12px;margin-top:6px;
+  }
+  .jm-search-hint.is-on{display:block;}
+
+  .jm-burger{
+    display:none;width:40px;height:38px;border-radius:10px;
+    border:1px solid var(--jm-line);background:#fff;
+    place-items:center;
+  }
+  .jm-burger span{display:block;width:18px;height:2px;background:var(--jm-deep);margin:3px auto;border-radius:2px;transition:transform .25s,opacity .25s;}
+  .jm-burger.is-open span:nth-child(1){transform:translateY(5px) rotate(45deg);}
+  .jm-burger.is-open span:nth-child(2){opacity:0;}
+  .jm-burger.is-open span:nth-child(3){transform:translateY(-5px) rotate(-45deg);}
+
+  /* ===== 首屏：全幅主视觉背景与浮动文字 ===== */
+  .jm-hero{
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid var(--jm-line);
+  }
+  .jm-hero-bg{position:absolute;inset:0;z-index:0;}
+  .jm-hero-bg svg{width:100%;height:100%;object-fit:cover;}
+  .jm-hero-inner{
+    position:relative;z-index:1;
+    display:grid;
+    grid-template-columns:minmax(0,1.05fr) minmax(0,.72fr);
+    gap:34px;
+    align-items:end;
+    padding:64px 0 56px;
+  }
+  .jm-hero-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(247,243,231,.9);
+    color:var(--jm-deep);
+    border:1px solid rgba(47,93,75,.3);
+    font-size:12px;font-weight:700;letter-spacing:.1em;
+    padding:5px 12px;border-radius:999px;
+  }
+  .jm-hero-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--jm-amber);}
+  .jm-hero h1{
+    font-size:clamp(30px,4.4vw,50px);
+    line-height:1.18;
+    margin:16px 0 14px;
+    letter-spacing:.01em;
+    color:#16241d;
+    font-weight:800;
+    text-shadow:0 1px 0 rgba(255,255,255,.5);
+  }
+  .jm-hero h1 .jm-h1-accent{
+    display:inline-block;
+    background:linear-gradient(180deg,transparent 66%,var(--jm-amber-soft) 66%);
+    padding:0 2px;
+  }
+  .jm-hero-lead{
+    font-size:15.5px;color:#2c3d34;max-width:56ch;
+    background:rgba(247,243,231,.82);
+    border-left:3px solid var(--jm-amber);
+    padding:10px 16px;
+    border-radius:0 10px 10px 0;
+  }
+  .jm-hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
+  .jm-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;border-radius:999px;font-size:14px;font-weight:700;
+    transition:transform .18s,box-shadow .18s,background .18s;
+  }
+  .jm-btn-primary{background:var(--jm-deep);color:#f6f1de;box-shadow:0 6px 18px rgba(31,61,51,.28);}
+  .jm-btn-primary:hover{transform:translateY(-2px);background:#16302700;background:var(--jm-deep-2);}
+  .jm-btn-ghost{background:rgba(255,255,255,.8);color:var(--jm-deep);border:1px solid rgba(31,61,51,.28);}
+  .jm-btn-ghost:hover{transform:translateY(-2px);background:#fff;}
+  .jm-btn-amber{background:var(--jm-amber);color:#2a1d05;box-shadow:0 6px 16px rgba(217,155,61,.34);}
+  .jm-btn-amber:hover{transform:translateY(-2px);background:#e5a94a;}
+
+  .jm-hero-card{
+    background:rgba(24,42,34,.86);
+    color:#eef2e6;
+    border:1px solid rgba(240,201,131,.4);
+    border-radius:var(--jm-radius);
+    padding:22px 22px 20px;
+    box-shadow:var(--jm-shadow);
+    backdrop-filter:blur(4px);
+  }
+  .jm-hero-card h2{font-size:15px;margin:0 0 4px;letter-spacing:.06em;color:var(--jm-amber-soft);font-weight:700;}
+  .jm-hero-card p.jm-hero-intro{
+    font-size:13.5px;line-height:1.85;color:#d5ddce;margin:8px 0 16px;
+  }
+  .jm-stats{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:8px;border-top:1px solid rgba(240,201,131,.28);padding-top:14px;
+  }
+  .jm-stat b{display:block;font-size:21px;color:var(--jm-amber-soft);line-height:1.2;font-weight:800;}
+  .jm-stat small{display:block;font-size:11.5px;color:#b9c4b3;margin-top:2px;}
+  .jm-hero-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;}
+  .jm-hero-tags span{
+    font-size:11.5px;background:rgba(240,201,131,.14);
+    border:1px solid rgba(240,201,131,.35);
+    color:#eadfc4;padding:2px 9px;border-radius:999px;
+  }
+
+  /* ===== 通用 section 排版 ===== */
+  .jm-section{padding:56px 0;border-bottom:1px solid var(--jm-line);}
+  .jm-section:nth-of-type(even){background:#f2ecdb;}
+  .jm-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px;}
+  .jm-sec-head h2{
+    font-size:clamp(21px,2.5vw,27px);margin:6px 0 0;line-height:1.3;color:var(--jm-deep);font-weight:800;
+  }
+  .jm-kicker{
+    font-size:12px;letter-spacing:.2em;color:var(--jm-amber);font-weight:800;text-transform:uppercase;
+  }
+  .jm-sec-desc{font-size:13.5px;color:var(--jm-muted);max-width:52ch;margin:0;}
+  .jm-linkmore{font-size:13.5px;font-weight:700;color:var(--jm-deep-2);border-bottom:2px solid var(--jm-amber);padding-bottom:2px;}
+  .jm-linkmore:hover{color:var(--jm-amber);}
+
+  /* ===== 焦点内容：一幅重点大图 + 文字列表 ===== */
+  .jm-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:26px;align-items:stretch;}
+  .jm-focus-main{
+    background:#fff;border:1px solid var(--jm-line);border-radius:18px;overflow:hidden;
+    box-shadow:var(--jm-shadow);display:flex;flex-direction:column;
+    transition:transform .2s,box-shadow .2s;
+  }
+  .jm-focus-main:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(31,61,51,.18);}
+  .jm-focus-main figure{margin:0;position:relative;}
+  .jm-focus-main figure svg{width:100%;height:auto;aspect-ratio:16/9;}
+  .jm-play{
+    position:absolute;left:18px;bottom:16px;
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(24,42,34,.85);color:#f3ecd6;
+    font-size:12.5px;font-weight:600;padding:6px 13px;border-radius:999px;
+    border:1px solid rgba(240,201,131,.5);
+  }
+  .jm-play i{width:0;height:0;border-left:8px solid var(--jm-amber-soft);border-top:5px solid transparent;border-bottom:5px solid transparent;display:inline-block;}
+  .jm-focus-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1;}
+  .jm-focus-body h3{font-size:19px;margin:0;line-height:1.45;color:var(--jm-deep);}
+  .jm-focus-body p{margin:0;font-size:13.8px;color:#46554b;}
+  .jm-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--jm-muted);}
+  .jm-tagline{display:flex;flex-wrap:wrap;gap:6px;}
+  .jm-tagline span{font-size:11.5px;background:#ede5cf;color:#4a5a4e;padding:2px 9px;border-radius:999px;border:1px solid #dfd4b8;}
+
+  .jm-focus-list{display:flex;flex-direction:column;gap:14px;}
+  .jm-focus-item{
+    background:#fff;border:1px solid var(--jm-line);border-radius:14px;padding:16px 18px;
+    display:flex;flex-direction:column;gap:7px;
+    transition:border-color .2s,transform .2s,background .2s;
+  }
+  .jm-focus-item:hover{border-color:var(--jm-amber);transform:translateX(4px);background:#fffdf5;}
+  .jm-focus-item h3{font-size:15.5px;margin:0;line-height:1.5;color:#22362c;}
+  .jm-focus-item p{margin:0;font-size:13px;color:var(--jm-muted);}
+  .jm-focus-item .jm-meta{font-size:12px;}
+
+  /* ===== 精选视频流：三列等高卡片 ===== */
+  .jm-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+  .jm-video-card{
+    background:#fff;border:1px solid var(--jm-line);border-radius:16px;overflow:hidden;
+    display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;
+  }
+  .jm-video-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(31,61,51,.16);}
+  .jm-video-thumb{position:relative;background:#e5dcc4;}
+  .jm-video-thumb svg{width:100%;height:auto;aspect-ratio:16/9;}
+  .jm-video-dur{
+    position:absolute;right:10px;bottom:10px;font-size:11.5px;
+    background:rgba(20,32,26,.82);color:#f2ead4;padding:1px 8px;border-radius:6px;
+  }
+  .jm-video-body{padding:15px 17px 16px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .jm-video-body h3{font-size:15.5px;margin:0;line-height:1.5;color:#22362c;}
+  .jm-video-body p{margin:0;font-size:12.8px;color:var(--jm-muted);flex:1;}
+  .jm-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;}
+  .jm-act{
+    display:inline-flex;align-items:center;gap:5px;font-size:12.5px;
+    border:1px solid var(--jm-line);border-radius:999px;padding:3px 11px;
+    color:#43554a;background:#fbf8ee;transition:all .18s;
+  }
+  .jm-act:hover{border-color:var(--jm-amber);color:#2a3c31;}
+  .jm-act.is-active{background:#e5efe2;border-color:#9dbb9d;color:#26492f;font-weight:700;}
+  .jm-act.is-saved{background:#fbeecd;border-color:var(--jm-amber);color:#7a5312;font-weight:700;}
+
+  /* ===== 关键词解析（长文） ===== */
+  .jm-essay{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:30px;align-items:start;}
+  .jm-essay-body{background:#fff;border:1px solid var(--jm-line);border-radius:18px;padding:28px 30px;box-shadow:var(--jm-shadow);}
+  .jm-essay-body h3{
+    font-size:17px;margin:26px 0 8px;color:var(--jm-deep-2);display:flex;align-items:center;gap:9px;
+  }
+  .jm-essay-body h3:first-of-type{margin-top:6px;}
+  .jm-essay-body h3::before{
+    content:"";width:6px;height:18px;border-radius:3px;background:linear-gradient(180deg,var(--jm-amber),var(--jm-deep-2));
+  }
+  .jm-essay-body p{font-size:14.2px;color:#3d4a42;margin:9px 0;}
+  .jm-essay-body strong{color:var(--jm-deep);}
+  .jm-essay-aside{display:flex;flex-direction:column;gap:16px;}
+  .jm-aside-card{
+    background:linear-gradient(160deg,var(--jm-deep),var(--jm-deep-2));
+    color:#eef2e6;border-radius:16px;padding:20px 20px 18px;
+    border:1px solid rgba(240,201,131,.3);
+  }
+  .jm-aside-card h4{margin:0 0 8px;font-size:14px;color:var(--jm-amber-soft);letter-spacing:.06em;}
+  .jm-aside-card p{font-size:13px;color:#cfd9c9;margin:6px 0;}
+  .jm-aside-plain{background:#fff;border:1px solid var(--jm-line);border-radius:16px;padding:18px 20px;}
+  .jm-aside-plain h4{margin:0 0 10px;font-size:14px;color:var(--jm-deep);}
+  .jm-aside-plain ul{margin:0;padding-left:18px;font-size:13px;color:#48574d;}
+  .jm-aside-plain li{margin-bottom:6px;}
+
+  /* ===== 专题企划：图文交替单列 ===== */
+  .jm-topic-stack{display:flex;flex-direction:column;gap:22px;}
+  .jm-topic{
+    display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:24px;
+    background:#fff;border:1px solid var(--jm-line);border-radius:18px;overflow:hidden;
+    transition:box-shadow .2s;
+  }
+  .jm-topic:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,300px);}
+  .jm-topic:nth-child(even) .jm-topic-media{order:2;}
+  .jm-topic:hover{box-shadow:0 14px 30px rgba(31,61,51,.14);}
+  .jm-topic-media{background:#e6dcc2;display:flex;align-items:stretch;}
+  .jm-topic-media svg{width:100%;height:100%;object-fit:cover;}
+  .jm-topic-body{padding:20px 24px 22px;display:flex;flex-direction:column;gap:9px;}
+  .jm-status{
+    display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;
+    color:#22522f;background:#e1efe0;border:1px solid #a9c9a5;padding:2px 10px;border-radius:999px;
+    align-self:flex-start;
+  }
+  .jm-status.jm-status-warm{color:#7a4d0a;background:#fbeecd;border-color:#e3b971;}
+  .jm-topic-body h3{font-size:17px;margin:0;color:var(--jm-deep);}
+  .jm-topic-body p{margin:0;font-size:13.4px;color:var(--jm-muted);}
+  .jm-topic-items{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:7px;}
+  .jm-topic-items li{
+    font-size:13.2px;color:#3f4e45;padding-left:18px;position:relative;
+  }
+  .jm-topic-items li::before{
+    content:"▸";position:absolute;left:0;color:var(--jm-amber);font-weight:700;
+  }
+
+  /* ===== 创作者矩阵：双列简介 ===== */
+  .jm-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+  .jm-author{
+    background:#fff;border:1px solid var(--jm-line);border-radius:16px;padding:20px;
+    display:flex;gap:16px;align-items:flex-start;transition:transform .2s,box-shadow .2s;
+  }
+  .jm-author:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(31,61,51,.14);}
+  .jm-avatar{
+    flex:none;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+    font-weight:800;font-size:20px;color:#fff;letter-spacing:.02em;
+  }
+  .jm-avatar.a1{background:linear-gradient(140deg,#3d7159,#25503d);}
+  .jm-avatar.a2{background:linear-gradient(140deg,#d99b3d,#a86a18);color:#2a1d05;}
+  .jm-avatar.a3{background:linear-gradient(140deg,#7b9c8c,#4d7263);}
+  .jm-avatar.a4{background:linear-gradient(140deg,#c98a5a,#96603a);}
+  .jm-avatar.a5{background:linear-gradient(140deg,#8b7fae,#5b4f83);}
+  .jm-author-info{min-width:0;flex:1;}
+  .jm-author-info h3{margin:0 0 2px;font-size:15.5px;color:var(--jm-deep);display:flex;align-items:center;gap:7px;flex-wrap:wrap;}
+  .jm-author-info h3 small{font-size:11.5px;color:var(--jm-amber);font-weight:700;border:1px solid var(--jm-amber-soft);border-radius:999px;padding:0 7px;}
+  .jm-author-info p{font-size:12.9px;color:var(--jm-muted);margin:5px 0 8px;}
+  .jm-author-stat{display:flex;gap:14px;font-size:12px;color:#4c5b51;flex-wrap:wrap;}
+  .jm-author-stat b{color:var(--jm-deep);}
+  .jm-author-more{font-size:12.5px;font-weight:700;color:var(--jm-deep-2);margin-top:8px;display:inline-block;border-bottom:1.5px solid var(--jm-amber-soft);}
+  .jm-author-more:hover{color:var(--jm-amber);}
+
+  /* ===== 口碑评价：评分摘要 + 双列短评 ===== */
+  .jm-review-wrap{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:26px;align-items:start;}
+  .jm-score{
+    background:linear-gradient(170deg,#fff,#f6f0dd);
+    border:1px solid var(--jm-line);border-radius:18px;padding:24px;text-align:center;
+    box-shadow:var(--jm-shadow);
+  }
+  .jm-score b{display:block;font-size:44px;line-height:1;color:var(--jm-deep);font-weight:800;}
+  .jm-score small{display:block;font-size:12.5px;color:var(--jm-muted);margin-top:6px;}
+  .jm-score .jm-stars{color:var(--jm-amber);font-size:18px;letter-spacing:3px;margin-top:8px;}
+  .jm-score-bars{margin-top:16px;text-align:left;font-size:12px;color:#4e5c52;}
+  .jm-score-bars div{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+  .jm-score-bars i{flex:1;height:7px;border-radius:99px;background:#e5dcc2;overflow:hidden;font-style:normal;}
+  .jm-score-bars i em{display:block;height:100%;background:linear-gradient(90deg,var(--jm-amber),var(--jm-deep-2));border-radius:99px;}
+  .jm-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+  .jm-review{
+    background:#fff;border:1px solid var(--jm-line);border-radius:14px;padding:16px 18px;
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .jm-review-head{display:flex;align-items:center;gap:9px;}
+  .jm-review-head .jm-avatar{width:32px;height:32px;font-size:13px;}
+  .jm-review-head b{font-size:13px;color:var(--jm-deep);}
+  .jm-review-head span{font-size:11.5px;color:var(--jm-muted);margin-left:auto;}
+  .jm-review p{margin:0;font-size:13px;color:#43524a;}
+  .jm-review .jm-stars{font-size:12px;color:var(--jm-amber);letter-spacing:2px;}
+
+  /* ===== 企业动态 / 合作 / FAQ 辅助区 ===== */
+  .jm-aux-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:start;}
+  .jm-panel{background:#fff;border:1px solid var(--jm-line);border-radius:18px;padding:24px 26px;box-shadow:0 8px 22px rgba(31,61,51,.08);}
+  .jm-panel h3{margin:0 0 14px;font-size:17px;color:var(--jm-deep);display:flex;align-items:center;gap:8px;}
+  .jm-panel h3::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--jm-amber);transform:rotate(45deg);}
+  .jm-news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px;}
+  .jm-news li{display:flex;gap:12px;font-size:13.2px;color:#3f4e45;}
+  .jm-news time{flex:none;font-size:12px;color:var(--jm-deep-2);font-weight:700;background:#ece6d2;border-radius:6px;padding:1px 8px;height:fit-content;}
+  .jm-news b{color:var(--jm-deep);}
+
+  .jm-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+  .jm-partner{
+    border:1px dashed #cdc2a4;border-radius:12px;padding:14px 14px;
+    display:flex;align-items:center;gap:10px;font-size:13px;color:#44534a;background:#fbf8ee;
+  }
+  .jm-partner i{
+    flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+    font-style:normal;font-weight:800;font-size:13px;color:#fff;background:var(--jm-deep-2);
+  }
+  .jm-partner:nth-child(2n) i{background:var(--jm-amber);color:#2a1d05;}
+  .jm-partner small{display:block;font-size:11px;color:var(--jm-muted);}
+
+  .jm-faq{display:flex;flex-direction:column;gap:10px;}
+  .jm-faq details{
+    background:#fbf8ee;border:1px solid var(--jm-line);border-radius:12px;padding:0 16px;
+    transition:background .2s,border-color .2s;
+  }
+  .jm-faq details[open]{background:#fff;border-color:var(--jm-amber-soft);}
+  .jm-faq summary{
+    cursor:pointer;font-size:13.8px;font-weight:700;color:#28402f;padding:13px 0;
+    list-style:none;display:flex;align-items:center;gap:9px;
+  }
+  .jm-faq summary::-webkit-details-marker{display:none;}
+  .jm-faq summary::before{
+    content:"+";flex:none;width:20px;height:20px;border-radius:50%;
+    background:#e7dfc8;color:var(--jm-deep);display:grid;place-items:center;
+    font-size:14px;font-weight:700;transition:background .2s,color .2s;
+  }
+  .jm-faq details[open] summary::before{content:"−";background:var(--jm-amber);color:#2a1d05;}
+  .jm-faq p{margin:0 0 14px;font-size:13px;color:#4c5b51;padding-left:29px;}
+
+  /* ===== 投稿 / 联系 CTA ===== */
+  .jm-cta{
+    background:linear-gradient(120deg,var(--jm-deep),#2f5d4b 70%,#3f7159);
+    color:#eef2e6;border-radius:22px;padding:34px 36px;
+    display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+    border:1px solid rgba(240,201,131,.3);
+  }
+  .jm-cta h2{margin:0 0 6px;font-size:clamp(20px,2.4vw,25px);color:#f6efdc;}
+  .jm-cta p{margin:0;font-size:13.6px;color:#c9d5c6;max-width:60ch;}
+
+  /* ===== 页脚 ===== */
+  .jm-footer{background:#16241d;color:#b9c4b3;padding:44px 0 26px;font-size:13px;}
+  .jm-footer-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,.7fr));gap:30px;}
+  .jm-footer h4{color:#f0e6cd;font-size:13.5px;margin:0 0 12px;letter-spacing:.08em;}
+  .jm-footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
+  .jm-footer a:hover{color:var(--jm-amber-soft);}
+  .jm-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .jm-footer-brand .jm-brand-mark{width:34px;height:34px;font-size:13px;}
+  .jm-footer-brand b{color:#f0e6cd;font-size:16px;}
+  .jm-footer p{margin:8px 0;line-height:1.8;font-size:12.6px;color:#93a08f;}
+  .jm-footer-bottom{
+    margin-top:28px;padding-top:16px;border-top:1px solid #2b3d33;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#82907e;
+  }
+
+  /* ===== 弹窗 / toast ===== */
+  .jm-modal{
+    position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;padding:20px;
+    background:rgba(18,30,24,.55);backdrop-filter:blur(3px);
+  }
+  .jm-modal.is-on{display:flex;}
+  .jm-modal-box{
+    background:var(--jm-cream);border-radius:18px;max-width:520px;width:100%;
+    padding:26px 26px 22px;box-shadow:0 30px 70px rgba(0,0,0,.35);
+    border:1px solid var(--jm-line);max-height:86vh;overflow:auto;
+  }
+  .jm-modal-box h3{margin:0 0 6px;font-size:19px;color:var(--jm-deep);}
+  .jm-modal-box p{font-size:13.4px;color:var(--jm-muted);margin:6px 0 14px;}
+  .jm-modal-box label{display:block;font-size:12.5px;font-weight:700;color:#3f4e45;margin:10px 0 5px;}
+  .jm-modal-box input,.jm-modal-box textarea{
+    width:100%;border:1px solid var(--jm-line);border-radius:10px;padding:9px 12px;
+    font:inherit;font-size:13.5px;background:#fff;outline:none;color:var(--jm-ink);
+  }
+  .jm-modal-box textarea{min-height:88px;resize:vertical;}
+  .jm-modal-box input:focus,.jm-modal-box textarea:focus{border-color:var(--jm-deep-2);box-shadow:0 0 0 3px rgba(47,93,75,.13);}
+  .jm-modal-foot{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;flex-wrap:wrap;}
+  .jm-close{position:absolute;right:18px;top:14px;font-size:22px;color:#7a8a7d;line-height:1;}
+  .jm-modal-box{position:relative;}
+
+  .jm-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+    background:#1f3d33;color:#f3ecd6;font-size:13.5px;padding:11px 22px;border-radius:999px;
+    box-shadow:0 14px 34px rgba(0,0,0,.3);opacity:0;pointer-events:none;
+    transition:opacity .25s,transform .25s;z-index:200;border:1px solid rgba(240,201,131,.4);
+    max-width:88vw;text-align:center;
+  }
+  .jm-toast.is-on{opacity:1;transform:translate(-50%,0);}
+
+  .jm-totop{
+    position:fixed;right:22px;bottom:26px;z-index:90;
+    width:46px;height:46px;border-radius:50%;background:var(--jm-deep);color:#f3ecd6;
+    display:grid;place-items:center;font-size:18px;box-shadow:0 10px 24px rgba(31,61,51,.35);
+    opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s,transform .25s;transform:translateY(10px);
+  }
+  .jm-totop.is-on{opacity:1;visibility:visible;transform:translateY(0);}
+  .jm-totop:hover{background:var(--jm-deep-2);}
+
+  /* ===== 响应式 ===== */
+  @media (max-width:1024px){
+    .jm-hero-inner{grid-template-columns:1fr;align-items:start;padding:46px 0 44px;}
+    .jm-focus-grid{grid-template-columns:1fr;}
+    .jm-essay{grid-template-columns:1fr;}
+    .jm-review-wrap{grid-template-columns:1fr;}
+    .jm-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  }
+  @media (max-width:860px){
+    .jm-nav{
+      display:none;position:absolute;left:0;right:0;top:100%;
+      background:var(--jm-cream);border-bottom:1px solid var(--jm-line);
+      padding:10px 22px 16px;flex-direction:column;gap:2px;margin:0;
+      box-shadow:0 14px 24px rgba(31,61,51,.12);
+    }
+    .jm-nav.is-open{display:flex;}
+    .jm-nav a{padding:11px 12px;}
+    .jm-header-inner{position:relative;}
+    .jm-burger{display:grid;}
+    .jm-search input{width:110px;}
+    .jm-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .jm-author-grid{grid-template-columns:1fr;}
+    .jm-reviews{grid-template-columns:1fr;}
+    .jm-aux-grid{grid-template-columns:1fr;}
+    .jm-topic,.jm-topic:nth-child(even){grid-template-columns:1fr;}
+    .jm-topic:nth-child(even) .jm-topic-media{order:0;}
+    .jm-topic-media svg{aspect-ratio:16/9;height:auto;}
+  }
+  @media (max-width:620px){
+    .jm-header-tools .jm-search{display:none;}
+    .jm-video-grid{grid-template-columns:1fr;}
+    .jm-footer-grid{grid-template-columns:1fr;}
+    .jm-notice-list{gap:20px;font-size:11.5px;}
+    .jm-hero-card{padding:18px;}
+    .jm-cta{padding:26px 22px;}
+    .jm-panel{padding:20px;}
+    .jm-essay-body{padding:22px 20px;}
+    .jm-partners{grid-template-columns:1fr;}
+    .jm-section{padding:42px 0;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="jm-topstick" id="jmTop">
+  <div class="jm-notice" role="region" aria-label="官方公告">
+    <div class="jm-container jm-notice-inner">
+      <span class="jm-notice-tag">官方发布</span>
+      <div class="jm-notice-list">
+        <span><b>11-20</b>「麻花手记」第三季开机，24位创作者参与共创</span>
+        <span><b>11-18</b>九一蘑菇麻花官网入口全新改版，新增创作档案检索</span>
+        <span><b>11-15</b>冬季原创短片征集启动，报名通道已开放</span>
+        <span><b>11-10</b>高清正版片库扩充至2180部，支持离线下载</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="jm-header">
+    <div class="jm-container">
+      <div class="jm-header-inner">
+        <a class="jm-brand" href="#jmHero" aria-label="九一蘑菇官方网站首页">
+          <span class="jm-brand-mark" aria-hidden="true">九一</span>
+          <span class="jm-brand-name"><em>九一蘑菇</em>麻花<span class="jm-brand-sub">ORIGINAL VIDEO</span></span>
+        </a>
+        <nav class="jm-nav" id="jmNav" aria-label="主导航">
+          <a href="#jmFocus">焦点内容</a>
+          <a href="#jmVideos">精选视频</a>
+          <a href="#jmEssay">品牌解析</a>
+          <a href="#jmTopics">专题企划</a>
+          <a href="#jmAuthors">创作者</a>
+          <a href="#jmReviews">用户口碑</a>
+          <a href="#jmAux">帮助中心</a>
+        </nav>
+        <div class="jm-header-tools">
+          <div class="jm-search">
+            <input type="search" id="jmSearchInput" placeholder="搜索短片 / 创作者 / 专题" aria-label="站内搜索">
+            <button class="jm-search-btn" id="jmSearchBtn" type="button">搜索</button>
+          </div>
+          <button class="jm-burger" id="jmBurger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="jmNav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="jm-search-hint" id="jmSearchHint" role="status" aria-live="polite"></div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- S2 品牌首屏 -->
+  <section class="jm-hero jm-anchor" id="jmHero" aria-labelledby="jmHeroTitle">
+    <div class="jm-hero-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" role="img" aria-label="九一蘑菇麻花品牌主视觉：暖阳下的蘑菇林与胶片轨道">
+        <defs>
+          <linearGradient id="jmSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f7f3e7"/>
+            <stop offset="0.52" stop-color="#e9dfc6"/>
+            <stop offset="1" stop-color="#d9cba9"/>
+          </linearGradient>
+          <linearGradient id="jmHill1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8fae92"/>
+            <stop offset="1" stop-color="#5d8567"/>
+          </linearGradient>
+          <linearGradient id="jmHill2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4f7a60"/>
+            <stop offset="1" stop-color="#2f5d4b"/>
+          </linearGradient>
+          <radialGradient id="jmSun" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#f6dfae"/>
+            <stop offset="0.7" stop-color="#e8b96a" stop-opacity="0.7"/>
+            <stop offset="1" stop-color="#e8b96a" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="jmFilm" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#1f3d33"/>
+            <stop offset="1" stop-color="#2f5d4b"/>
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="760" fill="url(#jmSky)"/>
+        <circle cx="1130" cy="180" r="210" fill="url(#jmSun)"/>
+        <circle cx="1130" cy="180" r="76" fill="#f3e2b6" opacity="0.9"/>
+        <path d="M0 470 C 200 400 360 450 520 470 C 700 492 820 430 1000 452 C 1160 472 1300 430 1440 452 L1440 760 L0 760 Z" fill="url(#jmHill1)" opacity="0.65"/>
+        <path d="M0 560 C 220 512 400 560 600 572 C 800 584 980 540 1180 556 C 1300 566 1380 556 1440 562 L1440 760 L0 760 Z" fill="url(#jmHill2)" opacity="0.86"/>
+        <!-- 蘑菇群 -->
+        <g opacity="0.95">
+          <ellipse cx="300" cy="556" rx="52" ry="15" fill="#22402f" opacity="0.22"/>
+          <rect x="288" y="470" width="24" height="86" rx="9" fill="#e3d3ae"/>
+          <path d="M240 476 Q300 388 360 476 Z" fill="#c9713f"/>
+          <path d="M252 470 Q300 414 348 470 Z" fill="#e08c53" opacity="0.85"/>
+          <circle cx="278" cy="450" r="7" fill="#f6e7c3"/>
+          <circle cx="318" cy="440" r="5" fill="#f6e7c3"/>
+          <circle cx="336" cy="456" r="4" fill="#f6e7c3"/>
+        </g>
+        <g opacity="0.9">
+          <ellipse cx="420" cy="600" rx="40" ry="12" fill="#22402f" opacity="0.2"/>
+          <rect x="411" y="528" width="18" height="72" rx="7" fill="#ddcda9"/>
+          <path d="M374 532 Q420 462 466 532 Z" fill="#a8703c"/>
+          <circle cx="404" cy="510" r="5" fill="#f2e2bd"/>
+          <circle cx="436" cy="504" r="4" fill="#f2e2bd"/>
+        </g>
+        <g opacity="0.8">
+          <ellipse cx="1080" cy="608" rx="46" ry="13" fill="#22402f" opacity="0.2"/>
+          <rect x="1070" y="530" width="20" height="78" rx="8" fill="#e0d0ac"/>
+          <path d="M1028 534 Q1080 452 1132 534 Z" fill="#b5603a"/>
+          <circle cx="1060" cy="510" r="6" fill="#f5e5c0"/>
+          <circle cx="1096" cy="502" r="4" fill="#f5e5c0"/>
+          <circle cx="1116" cy="518" r="3.5" fill="#f5e5c0"/>
+        </g>
+        <!-- 胶片轨道 -->
+        <g transform="translate(0 640)">
+          <rect x="0" y="0" width="1440" height="86" fill="url(#jmFilm)" opacity="0.88"/>
+          <g fill="#f0c983" opacity="0.9">
+            <rect x="24" y="12" width="34" height="20" rx="4"/>
+            <rect x="82" y="12" width="34" height="20" rx="4"/>
+            <rect x="140" y="12" width="34" height="20" rx="4"/>
+            <rect x="198" y="12" width="34" height="20" rx="4"/>
+            <rect x="256" y="12" width="34" height="20" rx="4"/>
+            <rect x="314" y="12" width="34" height="20" rx="4"/>
+            <rect x="372" y="12" width="34" height="20" rx="4"/>
+            <rect x="430" y="12" width="34" height="20" rx="4"/>
+            <rect x="488" y="12" width="34" height="20" rx="4"/>
+            <rect x="546" y="12" width="34" height="20" rx="4"/>
+            <rect x="604" y="12" width="34" height="20" rx="4"/>
+            <rect x="662" y="12" width="34" height="20" rx="4"/>
+            <rect x="720" y="12" width="34" height="20" rx="4"/>
+            <rect x="778" y="12" width="34" height="20" rx="4"/>
+            <rect x="836" y="12" width="34" height="20" rx="4"/>
+            <rect x="894" y="12" width="34" height="20" rx="4"/>
+            <rect x="952" y="12" width="34" height="20" rx="4"/>
+            <rect x="1010" y="12" width="34" height="20" rx="4"/>
+            <rect x="1068" y="12" width="34" height="20" rx="4"/>
+            <rect x="1126" y="12" width="34" height="20" rx="4"/>
+            <rect x="1184" y="12" width="34" height="20" rx="4"/>
+            <rect x="1242" y="12" width="34" height="20" rx="4"/>
+            <rect x="1300" y="12" width="34" height="20" rx="4"/>
+            <rect x="1358" y="12" width="34" height="20" rx="4"/>
+          </g>
+          <g fill="#f0c983" opacity="0.55">
+            <rect x="24" y="56" width="34" height="18" rx="4"/>
+            <rect x="82" y="56" width="34" height="18" rx="4"/>
+            <rect x="140" y="56" width="34" height="18" rx="4"/>
+            <rect x="198" y="56" width="34" height="18" rx="4"/>
+            <rect x="256" y="56" width="34" height="18" rx="4"/>
+            <rect x="314" y="56" width="34" height="18" rx="4"/>
+            <rect x="372" y="56" width="34" height="18" rx="4"/>
+            <rect x="430" y="56" width="34" height="18" rx="4"/>
+            <rect x="488" y="56" width="34" height="18" rx="4"/>
+            <rect x="546" y="56" width="34" height="18" rx="4"/>
+            <rect x="604" y="56" width="34" height="18" rx="4"/>
+            <rect x="662" y="56" width="34" height="18" rx="4"/>
+            <rect x="720" y="56" width="34" height="18" rx="4"/>
+            <rect x="778" y="56" width="34" height="18" rx="4"/>
+            <rect x="836" y="56" width="34" height="18" rx="4"/>
+            <rect x="894" y="56" width="34" height="18" rx="4"/>
+            <rect x="952" y="56" width="34" height="18" rx="4"/>
+            <rect x="1010" y="56" width="34" height="18" rx="4"/>
+            <rect x="1068" y="56" width="34" height="18" rx="4"/>
+            <rect x="1126" y="56" width="34" height="18" rx="4"/>
+            <rect x="1184" y="56" width="34" height="18" rx="4"/>
+            <rect x="1242" y="56" width="34" height="18" rx="4"/>
+            <rect x="1300" y="56" width="34" height="18" rx="4"/>
+            <rect x="1358" y="56" width="34" height="18" rx="4"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="jm-container">
+      <div class="jm-hero-inner">
+        <div>
+          <span class="jm-hero-eyebrow">九一蘑菇官方网站 · 原创视频品牌</span>
+          <h1 id="jmHeroTitle">九一蘑菇<span class="jm-h1-accent">麻花</span>官网入口</h1>
+          <p class="jm-hero-lead">一家持续运营的原创视频企业，以「麻花」为叙事方法，把散落的日常拧成有韧性的故事。这里汇聚九一蘑菇麻花的精品内容、创作者档案与社区入口。</p>
+          <div class="jm-hero-btns">
+            <a class="jm-btn jm-btn-primary" href="#jmVideos">立即观看精选视频</a>
+            <a class="jm-btn jm-btn-amber" href="#jmAuthors">认识创作者</a>
+            <a class="jm-btn jm-btn-ghost" href="#jmAux">投稿与帮助</a>
+          </div>
+        </div>
+        <aside class="jm-hero-card" aria-label="企业与平台数据">
+          <h2>关于九一蘑菇</h2>
+          <p class="jm-hero-intro">九一蘑菇是深耕原创短片领域的视频品牌，麻花系列是我们的叙事厂牌。作为官方网站，我们为创作者与企业搭建高品质内容生态，坚持正版、高清与真实表达，让每一帧都值得信赖。</p>
+          <div class="jm-stats">
+            <div class="jm-stat"><b data-jm-count="2180">0</b><small>正版片库（部）</small></div>
+            <div class="jm-stat"><b data-jm-count="386">0</b><small>签约创作者</small></div>
+            <div class="jm-stat"><b data-jm-count="1240">0</b><small>社区互动（万）</small></div>
+          </div>
+          <div class="jm-hero-tags">
+            <span>原创</span><span>高清</span><span>正版</span><span>社区</span><span>内容生态</span><span>匠心</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="jm-section jm-anchor" id="jmFocus" aria-labelledby="jmFocusTitle">
+    <div class="jm-container">
+      <div class="jm-sec-head">
+        <div>
+          <div class="jm-kicker">FOCUS · 本期焦点</div>
+          <h2 id="jmFocusTitle">九一蘑菇麻花官网本周焦点推荐</h2>
+        </div>
+        <p class="jm-sec-desc">由编辑部与社区共同票选，每周更新四组重点内容，兼顾原创剧情、生活纪实与创作幕后。</p>
+      </div>
+
+      <div class="jm-focus-grid">
+        <article class="jm-focus-main">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点短片《拧成一股绳》封面：老巷天井中晾晒的麻花绳与光影">
+              <defs>
+                <linearGradient id="jmFc1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f2e5c6"/>
+                  <stop offset="1" stop-color="#d7bd8b"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#jmFc1)"/>
+              <rect x="0" y="0" width="640" height="120" fill="#c9a878" opacity="0.55"/>
+              <path d="M0 214 L640 214 L640 360 L0 360 Z" fill="#b98f5c" opacity="0.72"/>
+              <g stroke="#7a5528" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.85">
+                <path d="M120 30 C 170 110 90 170 150 240"/>
+                <path d="M320 20 C 360 100 280 160 340 236"/>
+                <path d="M500 34 C 540 112 470 176 520 244"/>
+              </g>
+              <g stroke="#8a6230" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.9">
+                <path d="M60 250 Q 200 300 340 248 T 600 252"/>
+                <path d="M60 286 Q 210 336 350 282 T 600 288"/>
+              </g>
+              <circle cx="300" cy="120" r="52" fill="#f6edd6" opacity="0.55"/>
+              <circle cx="480" cy="86" r="28" fill="#f6edd6" opacity="0.4"/>
+              <text x="30" y="330" font-family="sans-serif" font-size="20" fill="#4a3418" opacity="0.75">EP.09 · 拧成一股绳</text>
+            </svg>
+            <span class="jm-play"><i></i>正片播放 18:42</span>
+          </figure>
+          <div class="jm-focus-body">
+            <div class="jm-tagline"><span>原创剧情</span><span>人物访谈</span><span>城市探索</span></div>
+            <h3>拧成一股绳：一条老巷里的十二双手</h3>
+            <p>纪录团队跟拍三个月的原创短片，讲述城南老巷中十二户人家共同修复一口老井的过程。九一蘑菇麻花官网同步上线导演评论音轨与分镜手稿，呈现一部作品从雏形到成片的完整路径。</p>
+            <div class="jm-meta">
+              <span>导演：林见川</span><span>播放 86.4 万</span><span>点赞 3.2 万</span><span>收藏 1.1 万</span>
+            </div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ 点赞 <b data-jm-num="32018">32018</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+              <button class="jm-act" type="button" data-jm-copy>⧉ 复制链接</button>
+              <button class="jm-act" type="button" data-jm-comment>✎ 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="jm-focus-list">
+          <article class="jm-focus-item">
+            <div class="jm-tagline"><span>创作幕后</span><span>教程干货</span></div>
+            <h3>一场夜戏的十二次重来</h3>
+            <p>灯光组在雨里站了六小时，只为让井口那束反光刚好落在演员手背。幕后特辑拆解低照度拍摄的三套备选方案。</p>
+            <div class="jm-meta"><span>麻花幕后组</span><span>播放 41.2 万</span><span>点赞 1.8 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="18042">18042</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+            </div>
+          </article>
+          <article class="jm-focus-item">
+            <div class="jm-tagline"><span>生活方式</span><span>治愈影像</span></div>
+            <h3>蘑菇棚里的清晨五点</h3>
+            <p>郊外菌棚的温度计停在 14 度，栽培员一天的工作从听声音开始。全片无旁白，只有呼吸与湿度计的滴答。</p>
+            <div class="jm-meta"><span>周砚白</span><span>播放 33.7 万</span><span>点赞 1.4 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="14098">14098</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+            </div>
+          </article>
+          <article class="jm-focus-item">
+            <div class="jm-tagline"><span>行业观察</span><span>商业观察</span></div>
+            <h3>小体量团队如何做长线叙事</h3>
+            <p>对话三位独立制片人：预算只有三十万时，如何用一年时间把系列短片拍完并稳定更新。</p>
+            <div class="jm-meta"><span>严知白</span><span>播放 29.5 万</span><span>点赞 1.1 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="11056">11056</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频流：三列卡片 -->
+  <section class="jm-section jm-anchor" id="jmVideos" aria-labelledby="jmVideosTitle">
+    <div class="jm-container">
+      <div class="jm-sec-head">
+        <div>
+          <div class="jm-kicker">SELECTED · 精选视频</div>
+          <h2 id="jmVideosTitle">九一蘑菇麻花精品内容片库</h2>
+        </div>
+        <a class="jm-linkmore" href="#jmTopics">查看全部专题</a>
+      </div>
+
+      <div class="jm-video-grid">
+        <article class="jm-video-card">
+          <div class="jm-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="精选视频《面团与手掌》封面：案板上被反复揉压的面团特写">
+              <rect width="480" height="270" fill="#e8d8b4"/>
+              <rect x="0" y="150" width="480" height="120" fill="#c9a876"/>
+              <ellipse cx="240" cy="176" rx="130" ry="52" fill="#f4e7cb"/>
+              <ellipse cx="240" cy="168" rx="104" ry="40" fill="#efd9ae"/>
+              <path d="M150 160 C 200 130 280 132 336 164" stroke="#d8b97f" stroke-width="6" fill="none"/>
+              <path d="M156 178 C 210 150 288 152 340 180" stroke="#d8b97f" stroke-width="5" fill="none"/>
+              <circle cx="170" cy="90" r="34" fill="#9a6a34" opacity="0.35"/>
+              <circle cx="330" cy="78" r="26" fill="#9a6a34" opacity="0.3"/>
+              <text x="26" y="240" font-family="sans-serif" font-size="17" fill="#5d4120" opacity="0.8">手工 · 面团 · 时间</text>
+            </svg>
+            <span class="jm-video-dur">12:08</span>
+          </div>
+          <div class="jm-video-body">
+            <div class="jm-tagline"><span>美食烹饪</span><span>手艺</span></div>
+            <h3>面团与手掌：麻花的九次折叠</h3>
+            <p>从和面到出锅，老师傅用四十年手感讲清一道家常年味的全部分寸，附完整配方卡。</p>
+            <div class="jm-meta"><span>作者：陶守一</span><span>播放 52.6 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="21630">21630</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+              <button class="jm-act" type="button" data-jm-comment>✎ 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jm-video-card">
+          <div class="jm-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="精选视频《雨天的剪辑室》封面：堆满硬盘与便签的深夜剪辑工位">
+              <rect width="480" height="270" fill="#2c3a44"/>
+              <rect x="40" y="40" width="180" height="122" rx="6" fill="#5c7484" opacity="0.85"/>
+              <rect x="52" y="52" width="156" height="98" rx="4" fill="#9db9c6"/>
+              <rect x="70" y="72" width="86" height="8" rx="4" fill="#4d6572"/>
+              <rect x="70" y="90" width="120" height="8" rx="4" fill="#6e8794"/>
+              <rect x="70" y="108" width="66" height="8" rx="4" fill="#6e8794"/>
+              <rect x="250" y="86" width="190" height="76" rx="6" fill="#3e5058"/>
+              <rect x="264" y="102" width="162" height="10" rx="5" fill="#7f97a4"/>
+              <rect x="264" y="122" width="112" height="10" rx="5" fill="#627887"/>
+              <g fill="#f0c983">
+                <rect x="270" y="38" width="42" height="34" rx="4" opacity="0.8"/>
+                <rect x="322" y="30" width="52" height="42" rx="4" opacity="0.6"/>
+                <rect x="384" y="44" width="36" height="30" rx="4" opacity="0.75"/>
+              </g>
+              <path d="M0 214 L480 214 L480 270 L0 270 Z" fill="#1d2a31"/>
+              <text x="26" y="250" font-family="sans-serif" font-size="17" fill="#c4d3da">深夜 · 剪辑 · 复盘</text>
+            </svg>
+            <span class="jm-video-dur">09:35</span>
+          </div>
+          <div class="jm-video-body">
+            <div class="jm-tagline"><span>创作幕后</span><span>实用技巧</span></div>
+            <h3>雨天的剪辑室：一条时间线的取舍</h3>
+            <p>把 6 小时素材压进 9 分钟成片，剪辑师现场演示三种删减逻辑与节奏重建方法。</p>
+            <div class="jm-meta"><span>作者：沈澜</span><span>播放 38.4 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="15984">15984</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+              <button class="jm-act" type="button" data-jm-comment>✎ 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jm-video-card">
+          <div class="jm-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="精选视频《沿河而坐》封面：傍晚江岸边并排坐着的人群剪影">
+              <defs>
+                <linearGradient id="jmFc3" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f0c983"/>
+                  <stop offset="0.55" stop-color="#d99b6a"/>
+                  <stop offset="1" stop-color="#7d5a58"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#jmFc3)"/>
+              <circle cx="352" cy="88" r="46" fill="#f8e6bd" opacity="0.86"/>
+              <path d="M0 196 L480 196 L480 270 L0 270 Z" fill="#4a3a42" opacity="0.82"/>
+              <path d="M0 196 Q 120 178 240 194 T 480 190 L480 206 L0 206 Z" fill="#f0c983" opacity="0.35"/>
+              <g fill="#2f2830">
+                <circle cx="118" cy="176" r="12"/><rect x="107" y="188" width="22" height="30" rx="6"/>
+                <circle cx="176" cy="170" r="10"/><rect x="166" y="180" width="20" height="32" rx="6"/>
+                <circle cx="230" cy="178" r="11"/><rect x="220" y="189" width="20" height="28" rx="6"/>
+                <circle cx="300" cy="172" r="12"/><rect x="289" y="184" width="22" height="30" rx="6"/>
+              </g>
+              <text x="26" y="246" font-family="sans-serif" font-size="17" fill="#f0e3c4" opacity="0.9">傍晚 · 江岸 · 人群</text>
+            </svg>
+            <span class="jm-video-dur">15:12</span>
+          </div>
+          <div class="jm-video-body">
+            <div class="jm-tagline"><span>城市探索</span><span>在地文化</span></div>
+            <h3>沿河而坐：一座城的傍晚八点半</h3>
+            <p>连续拍摄三十个傍晚，记录江岸长椅上不同人的同一段天色，声轨全部取自现场。</p>
+            <div class="jm-meta"><span>作者：周砚白</span><span>播放 44.9 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="18372">18372</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+              <button class="jm-act" type="button" data-jm-comment>✎ 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jm-video-card">
+          <div class="jm-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="精选视频《一粒菌种的旅行》封面：培养皿与显微镜下的菌丝网络">
+              <rect width="480" height="270" fill="#e6ecdf"/>
+              <circle cx="150" cy="128" r="70" fill="#cfe0c6"/>
+              <circle cx="150" cy="128" r="54" fill="#f4f7ef"/>
+              <g stroke="#6f9673" stroke-width="2.4" fill="none">
+                <path d="M110 128 C 130 96 170 96 190 128"/>
+                <path d="M112 140 C 134 168 168 168 188 138"/>
+                <path d="M126 108 C 140 130 162 130 176 110"/>
+                <path d="M126 150 C 142 128 160 130 174 150"/>
+              </g>
+              <rect x="276" y="60" width="150" height="140" rx="10" fill="#3e5745"/>
+              <rect x="290" y="76" width="122" height="70" rx="6" fill="#9fbf9f"/>
+              <rect x="290" y="156" width="58" height="30" rx="5" fill="#6e9472"/>
+              <rect x="356" y="156" width="56" height="30" rx="5" fill="#6e9472"/>
+              <text x="26" y="248" font-family="sans-serif" font-size="17" fill="#3f5947">菌种 · 显微 · 实验</text>
+            </svg>
+            <span class="jm-video-dur">11:04</span>
+          </div>
+          <div class="jm-video-body">
+            <div class="jm-tagline"><span>知识科普</span><span>科技前沿</span></div>
+            <h3>一粒菌种的旅行：从试管到餐桌</h3>
+            <p>走进菌种实验室与栽培车间，用显微影像解释菌丝如何长成我们熟悉的形状。</p>
+            <div class="jm-meta"><span>作者：许青禾</span><span>播放 31.8 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="13460">13460</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+              <button class="jm-act" type="button" data-jm-comment>✎ 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jm-video-card">
+          <div class="jm-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="精选视频《旧放映机的最后一夜》封面：放映机光束穿过黑暗放映厅">
+              <rect width="480" height="270" fill="#1f232a"/>
+              <rect x="0" y="0" width="480" height="270" fill="#2a2f36"/>
+              <path d="M60 210 L300 60 L360 60 L120 210 Z" fill="#f5e3b2" opacity="0.24"/>
+              <path d="M60 210 L300 60 L330 60 L90 210 Z" fill="#f5e3b2" opacity="0.16"/>
+              <rect x="40" y="150" width="76" height="62" rx="8" fill="#4a525c"/>
+              <circle cx="78" cy="170" r="16" fill="#c9d4d8"/>
+              <circle cx="78" cy="170" r="9" fill="#7c8b93"/>
+              <circle cx="78" cy="196" r="12" fill="#8a6a3a"/>
+              <rect x="300" y="66" width="150" height="96" rx="6" fill="#e9e2cf"/>
+              <rect x="312" y="78" width="126" height="72" rx="4" fill="#c9b896" opacity="0.7"/>
+              <g fill="#3a4149"><rect x="330" y="196" width="26" height="44" rx="6"/><rect x="370" y="196" width="26" height="44" rx="6"/><rect x="410" y="196" width="26" height="44" rx="6"/></g>
+              <text x="26" y="250" font-family="sans-serif" font-size="17" fill="#d6dbe0">放映 · 光束 · 落幕</text>
+            </svg>
+            <span class="jm-video-dur">22:41</span>
+          </div>
+          <div class="jm-video-body">
+            <div class="jm-tagline"><span>人物访谈</span><span>情感故事</span></div>
+            <h3>旧放映机的最后一夜</h3>
+            <p>开了二十八年的社区影厅谢幕，老板把最后一卷胶片留给常客，我们记录了这个夜晚。</p>
+            <div class="jm-meta"><span>作者：林见川</span><span>播放 61.3 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="24871">24871</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+              <button class="jm-act" type="button" data-jm-comment>✎ 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jm-video-card">
+          <div class="jm-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="精选视频《把阳台拍成片场》封面：阳台上架设的手机支架与绿植">
+              <rect width="480" height="270" fill="#eef2e6"/>
+              <rect x="0" y="190" width="480" height="80" fill="#b9cdb4"/>
+              <g stroke="#8fae92" stroke-width="4" fill="none" opacity="0.8">
+                <path d="M0 214 L480 214"/><path d="M0 238 L480 238"/>
+              </g>
+              <circle cx="86" cy="96" r="44" fill="#f3e2b6" opacity="0.85"/>
+              <rect x="176" y="72" width="132" height="124" rx="10" fill="#46564a"/>
+              <rect x="188" y="84" width="108" height="86" rx="6" fill="#a8c0a4"/>
+              <rect x="216" y="96" width="52" height="62" rx="4" fill="#e7eedf"/>
+              <g fill="#5c8a63"><circle cx="340" cy="150" r="30"/><circle cx="378" cy="160" r="22"/><circle cx="308" cy="168" r="18"/></g>
+              <text x="26" y="252" font-family="sans-serif" font-size="17" fill="#3f5947">手机 · 阳台 · 片场</text>
+            </svg>
+            <span class="jm-video-dur">07:26</span>
+          </div>
+          <div class="jm-video-body">
+            <div class="jm-tagline"><span>教程干货</span><span>实用技巧</span></div>
+            <h3>把阳台拍成片场：家庭影像布光指南</h3>
+            <p>三盏家用灯、一块反光板，讲解小空间里如何拍出有层次的访谈画面与产品特写。</p>
+            <div class="jm-meta"><span>作者：陶守一</span><span>播放 27.1 万</span></div>
+            <div class="jm-actions">
+              <button class="jm-act" type="button" data-jm-like>♥ <b data-jm-num="11908">11908</b></button>
+              <button class="jm-act" type="button" data-jm-save>☆ 收藏</button>
+              <button class="jm-act" type="button" data-jm-comment>✎ 评论</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M15 关键词解析 / 品牌深度解析 -->
+  <section class="jm-section jm-anchor" id="jmEssay" aria-labelledby="jmEssayTitle">
+    <div class="jm-container">
+      <div class="jm-sec-head">
+        <div>
+          <div class="jm-kicker">INSIGHT · 品牌解析</div>
+          <h2 id="jmEssayTitle">读懂九一蘑菇麻花：一个原创视频品牌的自我说明</h2>
+        </div>
+        <p class="jm-sec-desc">当人们搜索品牌入口时，真正想找的不只是一个页面，而是一套可信的内容标准。以下是我们对品牌、平台与创作的完整交代。</p>
+      </div>
+
+      <div class="jm-essay">
+        <div class="jm-essay-body">
+          <h3>名字是怎么来的：九一、蘑菇与麻花</h3>
+          <p>很多人第一次听到「九一蘑菇麻花」，会以为这是一个组合式的昵称。其实三个词各有出处：<strong>九一</strong>来自创始团队最初的九位成员与一份被反复修改的方案；<strong>蘑菇</strong>是我们在郊外菌棚拍摄第一支短片时留下的意象——安静、缓慢、在暗处生长；<strong>麻花</strong>则是我们的叙事方法，把两条看似无关的线拧在一起，形成有韧性的结构。作为九一蘑菇麻花的官方网站，我们把这个名字拆开讲清楚，是因为品牌不该只有一个入口，还应该有可被理解的来历。</p>
+          <p>企业成立至今，我们始终把「真实」放在「好看」之前。九一蘑菇麻花官网入口所展示的每一部作品，都经过选题会、粗剪评审与后期质检三道流程，涉及人物出镜的内容必须取得书面授权，涉及数据的画面必须标注来源。这些看不见的流程，构成了「值得信赖」四个字的具体重量，也是我们能够持续运营的基础。</p>
+
+          <h3>平台在做什么：从内容到内容生态</h3>
+          <p>九一蘑菇麻花官网入口并不是一个单纯的作品展示柜。我们把它设计成一个完整的内容生态：观众在这里找到原创、正版、高清的短片；创作者在这里获得选题支持、拍摄资源与分成机制；企业与伙伴在这里找到可长期合作的影像服务。三个角色彼此咬合，像麻花一样互相支撑，这也是我们在垂直领域里坚持深耕的原因。</p>
+          <p>为了保证品质，平台建立了分级发布机制。新创作者的作品先进入「麻花新芽」区域，由编辑与资深创作者共同给出修改建议；达到稳定更新与口碑标准的创作者，作品进入「麻花主厨」精选位。这个机制让内容生态保持活力：新人有机会被看见，成熟作者也不会因为流量波动而被轻易放弃。用户至上是我们的第一原则，但它不是一句口号，而是每一次推荐位调整时都要回答的问题——这条内容对观众有什么真实价值。</p>
+          <p>在技术层面，九一蘑菇麻花官网入口提供高清播放、离线下载与字幕检索能力。播放器支持 0.5 倍速到 2 倍速的无级调节，字幕可以按关键词跳转到对应时间点，方便学习型观众反复观看教程类内容。下载功能仅对已授权内容开放，并附带水印与授权说明，这是我们对正版的坚持，也是对创作者权益的基本尊重。</p>
+
+          <h3>创作方法论：麻花结构的四道工序</h3>
+          <p>我们的内容团队把创作拆成四道工序。第一道是<strong>选线</strong>：找到两条本来无关的线索，比如「一条老巷的修复」与「十二户人家的日常节奏」。第二道是<strong>拧合</strong>：让两条线在某一刻发生物理接触，通常是某个具体动作——一起抬石头、一起拧绳子。第三道是<strong>拉长</strong>：把接触后的变化展开，不急于给结论。第四道是<strong>收口</strong>：留一个不完美的结尾，让观众带着问题离开。这四道工序被写进了我们给新创作者的指导手册，也解释了为什么麻花系列的作品往往节奏偏慢、信息密度却很高。</p>
+          <p>方法论之外是大量的具体劳动。以《拧成一股绳》为例，团队在拍摄前做了三周田野走访，记录了四十七位居民的作息；正式拍摄十八天，后期剪辑版本迭代十一稿。这些数字不会出现在成片里，但它们决定了成片是否可信。九一蘑菇麻花官网会在作品页公开部分制作档案，包括分镜手稿、器材清单与拍摄周期，我们希望观众看到的不只是结果，还有过程。这种透明，是我们对「匠心」二字的理解，也是企业社会责任的微小实践。</p>
+
+          <h3>社区与未来：让创作者被长期陪伴</h3>
+          <p>社区是九一蘑菇麻花官网入口的另一半。我们设有固定的作品互评环节，每两周一次，创作者需要给出至少三条具体建议，而不是简单点赞。评论区的排序不按热度，而按「是否提供了新信息」进行加权，这让讨论更容易沉淀。我们也组织线下放映与创作工作坊，把线上的同好关系变成可以握手的真实连接。成长与陪伴不是抽象的词，它们发生在一次次修改建议和一场场放映之后的对话里。</p>
+          <p>未来一年，平台会继续扩大原创扶持计划，增加面向新人的设备借用名额，并把教程类内容做成结构化知识库，支持按技能点检索。我们也会把更多企业合作项目公开招募，让创作者有机会接触真实商业需求，在专业训练中提升能力。品牌故事写到这一页，其实才刚刚开始：九一蘑菇麻花希望成为一个多元、包容、持续生长的影像社区，让真实与温暖拥有可见的力量。</p>
+        </div>
+
+        <aside class="jm-essay-aside">
+          <div class="jm-aside-card">
+            <h4>品牌关键词</h4>
+            <p>原创 · 正版 · 高清 · 专业</p>
+            <p>社区 · 内容生态 · 品质 · 口碑</p>
+            <p>深耕 · 垂直领域 · 持续运营</p>
+            <p>匠心 · 创新 · 真实 · 温暖</p>
+          </div>
+          <div class="jm-aside-plain">
+            <h4>内容标准三条</h4>
+            <ul>
+              <li>人物出镜须取得书面授权</li>
+              <li>数据画面标注来源与时间</li>
+              <li>商业内容明确标注合作属性</li>
+            </ul>
+          </div>
+          <div class="jm-aside-plain">
+            <h4>制作档案公开</h4>
+            <ul>
+              <li>分镜手稿 · 导演阐述</li>
+              <li>器材清单 · 拍摄日志</li>
+              <li>剪辑版本 · 修改说明</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划：图文交替单列 -->
+  <section class="jm-section jm-anchor" id="jmTopics" aria-labelledby="jmTopicsTitle">
+    <div class="jm-container">
+      <div class="jm-sec-head">
+        <div>
+          <div class="jm-kicker">SERIES · 专题企划</div>
+          <h2 id="jmTopicsTitle">九一蘑菇麻花官网在更专题</h2>
+        </div>
+        <p class="jm-sec-desc">三个长期企划并行更新，每个专题下持续产出内容条目，欢迎报名参与共创。</p>
+      </div>
+
+      <div class="jm-topic-stack">
+        <article class="jm-topic">
+          <div class="jm-topic-media">
+            <svg viewBox="0 0 480 420" role="img" aria-label="专题《麻花手记》配图：摊开的手写笔记本与压平的胶片片段">
+              <rect width="480" height="420" fill="#e6dcc2"/>
+              <rect x="52" y="60" width="376" height="300" rx="10" fill="#faf5e6"/>
+              <line x1="240" y1="60" x2="240" y2="360" stroke="#ddd1b2" stroke-width="3"/>
+              <g stroke="#c7bda1" stroke-width="2.6">
+                <line x1="80" y1="120" x2="210" y2="120"/><line x1="80" y1="150" x2="206" y2="150"/>
+                <line x1="80" y1="180" x2="214" y2="180"/><line x1="80" y1="210" x2="196" y2="210"/>
+                <line x1="80" y1="240" x2="210" y2="240"/>
+                <line x1="272" y1="118" x2="392" y2="118"/><line x1="272" y1="148" x2="386" y2="148"/>
+                <line x1="272" y1="178" x2="392" y2="178"/><line x1="272" y1="208" x2="376" y2="208"/>
+                <line x1="272" y1="238" x2="390" y2="238"/>
+              </g>
+              <g fill="#42493f" opacity="0.85">
+                <rect x="288" y="268" width="86" height="56" rx="4" fill="#2e3a32"/>
+                <g fill="#f0c983" opacity="0.9">
+                  <rect x="294" y="274" width="10" height="8" rx="2"/><rect x="310" y="274" width="10" height="8" rx="2"/>
+                  <rect x="326" y="274" width="10" height="8" rx="2"/><rect x="342" y="274" width="10" height="8" rx="2"/>
+                  <rect x="294" y="310" width="10" height="8" rx="2"/><rect x="310" y="310" width="10" height="8" rx="2"/>
+                  <rect x="326" y="310" width="10" height="8" rx="2"/><rect x="342" y="310" width="10" height="8" rx="2"/>
+                </g>
+              </g>
+              <circle cx="120" cy="300" r="26" fill="#d99b3d" opacity="0.35"/>
+            </svg>
+          </div>
+          <div class="jm-topic-body">
+            <span class="jm-status">● 持续更新中 · 第 3 季</span>
+            <h3>麻花手记：创作者的十二种一天</h3>
+            <p>以一天为单位跟拍不同创作者，从清晨开工到深夜收工，呈现影像工作背后真实的时间结构。每集片尾附当日时间表与设备清单。</p>
+            <ul class="jm-topic-items">
+              <li>第 31 集 · 跟拍剪辑师的一整天：从九点到凌晨两点</li>
+              <li>第 32 集 · 灯光师的背包里到底装了什么</li>
+              <li>第 33 集 · 一个人完成外景收音的四个小时</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="jm-topic">
+          <div class="jm-topic-media">
+            <svg viewBox="0 0 480 420" role="img" aria-label="专题《街角放映厅》配图：街角小店门口拉起的白色幕布与折叠椅">
+              <rect width="480" height="420" fill="#3b4a52"/>
+              <rect x="0" y="300" width="480" height="120" fill="#2b363d"/>
+              <rect x="96" y="70" width="288" height="164" rx="6" fill="#e8e2cf"/>
+              <rect x="112" y="86" width="256" height="132" rx="4" fill="#c6d0c2" opacity="0.75"/>
+              <g stroke="#7d8a7f" stroke-width="3" opacity="0.8">
+                <line x1="112" y1="130" x2="368" y2="130"/><line x1="112" y1="176" x2="368" y2="176"/>
+              </g>
+              <g fill="#f0c983"><circle cx="150" cy="110" r="10"/><circle cx="220" cy="150" r="7"/><circle cx="316" cy="112" r="8"/></g>
+              <g fill="#1f2b31">
+                <rect x="90" y="308" width="52" height="46" rx="6"/>
+                <rect x="170" y="316" width="48" height="40" rx="6"/>
+                <rect x="248" y="312" width="50" height="44" rx="6"/>
+                <rect x="330" y="320" width="46" height="36" rx="6"/>
+              </g>
+              <text x="24" y="398" font-family="sans-serif" font-size="17" fill="#cfd8d2">街角 · 幕布 · 夏夜</text>
+            </svg>
+          </div>
+          <div class="jm-topic-body">
+            <span class="jm-status jm-status-warm">● 报名开放中 · 限 30 位</span>
+            <h3>街角放映厅：把好片子带回街区</h3>
+            <p>与社区空间合作的小型放映企划，选取平台原创短片在街角、院落与天台免费放映，每场安排创作者到场交流。</p>
+            <ul class="jm-topic-items">
+              <li>第 12 场 · 老电影院门口的雨夜专场纪实</li>
+              <li>第 13 场 · 天台上的一场十分钟短片联展</li>
+              <li>第 14 场 · 与街区书店共办的纪录片段落夜</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="jm-topic">
+          <div class="jm-topic-media">
+            <svg viewBox="0 0 480 420" role="img" aria-label="专题《第一次举起镜头》配图：双手举着相机对准窗外的树影">
+              <rect width="480" height="420" fill="#dfe8dc"/>
+              <rect x="60" y="48" width="360" height="240" rx="10" fill="#f4f7ef"/>
+              <rect x="84" y="72" width="312" height="192" rx="6" fill="#b7cdb4" opacity="0.65"/>
+              <g fill="#71955f" opacity="0.85">
+                <circle cx="150" cy="140" r="34"/><circle cx="206" cy="118" r="26"/><circle cx="238" cy="158" r="30"/><circle cx="310" cy="132" r="22"/>
+              </g>
+              <rect x="150" y="286" width="180" height="96" rx="14" fill="#3d4a3f"/>
+              <circle cx="240" cy="334" r="32" fill="#8aa383"/>
+              <circle cx="240" cy="334" r="19" fill="#33403a"/>
+              <rect x="292" y="298" width="26" height="16" rx="5" fill="#c8b98d"/>
+              <rect x="94" y="244" width="120" height="44" rx="16" fill="#e0b98b" opacity="0.9"/>
+              <rect x="268" y="244" width="120" height="44" rx="16" fill="#e0b98b" opacity="0.9"/>
+              <text x="24" y="404" font-family="sans-serif" font-size="17" fill="#3f5947">新手 · 相机 · 窗外</text>
+            </svg>
+          </div>
+          <div class="jm-topic-body">
+            <span class="jm-status">● 长期征集 · 每月评审</span>
+            <h3>第一次举起镜头：新人首作计划</h3>
+            <p>面向零基础创作者的扶持专题，提供脚本门诊、设备借用与一对一剪辑辅导，入选作品在官网首页获得推荐位。</p>
+            <ul class="jm-topic-items">
+              <li>第 07 期 · 用一部手机拍完三分钟家庭纪录片</li>
+              <li>第 08 期 · 从三个镜头开始讲清一件小事</li>
+              <li>第 09 期 · 第一次采访：如何让对话自然发生</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵：双列简介 -->
+  <section class="jm-section jm-anchor" id="jmAuthors" aria-labelledby="jmAuthorsTitle">
+    <div class="jm-container">
+      <div class="jm-sec-head">
+        <div>
+          <div class="jm-kicker">CREATORS · 创作者矩阵</div>
+          <h2 id="jmAuthorsTitle">九一蘑菇麻花的签约创作者</h2>
+        </div>
+        <a class="jm-linkmore" href="#jmAux">申请成为创作者</a>
+      </div>
+
+      <div class="jm-author-grid">
+        <article class="jm-author">
+          <div class="jm-avatar a1" aria-hidden="true">川</div>
+          <div class="jm-author-info">
+            <h3>林见川 <small>主理人</small></h3>
+            <p>擅长领域：原创剧情、人物访谈</p>
+            <p>九一蘑菇的联合创始人，偏爱在真实的街区里找故事。拍摄前习惯独自走访两周，相信镜头里的安静比热闹更难。代表作《拧成一股绳》《旧放映机的最后一夜》。</p>
+            <div class="jm-author-stat"><span>作品 <b>42</b></span><span>粉丝 <b>28.6 万</b></span><span>更新 <b>每周</b></span></div>
+            <button class="jm-author-more" type="button" data-jm-author="林见川">查看创作档案 →</button>
+          </div>
+        </article>
+
+        <article class="jm-author">
+          <div class="jm-avatar a2" aria-hidden="true">陶</div>
+          <div class="jm-author-info">
+            <h3>陶守一 <small>手艺记录</small></h3>
+            <p>擅长领域：美食烹饪、手作技艺</p>
+            <p>原餐厅后厨主厨，转行做影像记录，专拍手艺人的手。他认为镜头要离材料足够近，观众才闻得到味道。正在连载《面团与手掌》系列，附完整配方与工序表。</p>
+            <div class="jm-author-stat"><span>作品 <b>67</b></span><span>粉丝 <b>41.3 万</b></span><span>更新 <b>双周</b></span></div>
+            <button class="jm-author-more" type="button" data-jm-author="陶守一">查看创作档案 →</button>
+          </div>
+        </article>
+
+        <article class="jm-author">
+          <div class="jm-avatar a3" aria-hidden="true">砚</div>
+          <div class="jm-author-info">
+            <h3>周砚白 <small>城市影像</small></h3>
+            <p>擅长领域：城市探索、治愈影像</p>
+            <p>长期在城市里做定点拍摄，同一机位可以坚持三十天。喜欢用环境声代替配乐，认为一座城的声音就是它的口音。作品多与季节和光线有关，节奏缓慢但细节扎实。</p>
+            <div class="jm-author-stat"><span>作品 <b>35</b></span><span>粉丝 <b>19.8 万</b></span><span>更新 <b>每周</b></span></div>
+            <button class="jm-author-more" type="button" data-jm-author="周砚白">查看创作档案 →</button>
+          </div>
+        </article>
+
+        <article class="jm-author">
+          <div class="jm-avatar a4" aria-hidden="true">沈</div>
+          <div class="jm-author-info">
+            <h3>沈澜 <small>后期指导</small></h3>
+            <p>擅长领域：创作幕后、实用技巧</p>
+            <p>从事后期剪辑十一年，擅长把复杂流程讲成可执行的步骤。她的教程不喜欢炫技，更在意观众能不能在自己的电脑上复现。负责平台剪辑门诊与新人辅导。</p>
+            <div class="jm-author-stat"><span>作品 <b>58</b></span><span>粉丝 <b>33.5 万</b></span><span>更新 <b>每周</b></span></div>
+            <button class="jm-author-more" type="button" data-jm-author="沈澜">查看创作档案 →</button>
+          </div>
+        </article>
+
+        <article class="jm-author">
+          <div class="jm-avatar a5" aria-hidden="true">禾</div>
+          <div class="jm-author-info">
+            <h3>许青禾 <small>科普作者</small></h3>
+            <p>擅长领域：知识科普、科技前沿</p>
+            <p>生物学背景，把实验室里的显微影像带进大众视野。她的作品坚持每个结论附来源，动画都由团队手绘完成。近期专注菌物与发酵主题的系列科普。</p>
+            <div class="jm-author-stat"><span>作品 <b>29</b></span><span>粉丝 <b>22.1 万</b></span><span>更新 <b>双周</b></span></div>
+            <button class="jm-author-more" type="button" data-jm-author="许青禾">查看创作档案 →</button>
+          </div>
+        </article>
+
+        <article class="jm-author">
+          <div class="jm-avatar a1" aria-hidden="true">严</div>
+          <div class="jm-author-info">
+            <h3>严知白 <small>行业观察</small></h3>
+            <p>擅长领域：行业观察、商业观察</p>
+            <p>前影视公司制片，现为独立内容顾问。擅长把行业里的模糊经验拆成可讨论的问题，常与年轻团队对谈预算与周期。文章与视频同步更新，数据均标注来源。</p>
+            <div class="jm-author-stat"><span>作品 <b>44</b></span><span>粉丝 <b>16.7 万</b></span><span>更新 <b>每月</b></span></div>
+            <button class="jm-author-more" type="button" data-jm-author="严知白">查看创作档案 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户口碑：评分摘要 + 双列短评 -->
+  <section class="jm-section jm-anchor" id="jmReviews" aria-labelledby="jmReviewsTitle">
+    <div class="jm-container">
+      <div class="jm-sec-head">
+        <div>
+          <div class="jm-kicker">VOICE · 用户口碑</div>
+          <h2 id="jmReviewsTitle">观众如何评价九一蘑菇麻花官网</h2>
+        </div>
+        <p class="jm-sec-desc">来自站内评分与社区留言的真实反馈，按内容维度归类整理，未作修饰。</p>
+      </div>
+
+      <div class="jm-review-wrap">
+        <aside class="jm-score" aria-label="综合评分摘要">
+          <b>4.8</b>
+          <div class="jm-stars" aria-hidden="true">★★★★★</div>
+          <small>综合评分 · 2.6 万人参与</small>
+          <div class="jm-score-bars">
+            <div><span>内容质量</span><i><em style="width:96%"></em></i><span>4.9</span></div>
+            <div><span>画质音效</span><i><em style="width:94%"></em></i><span>4.8</span></div>
+            <div><span>社区氛围</span><i><em style="width:91%"></em></i><span>4.7</span></div>
+            <div><span>更新稳定</span><i><em style="width:88%"></em></i><span>4.6</span></div>
+          </div>
+        </aside>
+
+        <div class="jm-reviews">
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a2" aria-hidden="true">阿</span><b>阿禾同学</b><span>第 31 集</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★★</div>
+            <p>跟着时间表学了一遍，才知道原来一天可以安排得这么清楚。最喜欢片尾的设备清单，直接照着买了两样，省钱又实用。</p>
+          </article>
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a3" aria-hidden="true">老</span><b>老巷口</b><span>口碑评价</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★★</div>
+            <p>《拧成一股绳》看得眼睛发酸。不是因为煽情，是因为那些人做事的认真劲儿太真实了。希望多拍这种不着急的片子。</p>
+          </article>
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a1" aria-hidden="true">剪</span><b>剪辑小蒋</b><span>教程反馈</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★☆</div>
+            <p>教程讲得克制，没有一堆花哨转场，正合我意。提个小建议：能不能把时间线的项目文件也放出来，对新人更有帮助。</p>
+          </article>
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a5" aria-hidden="true">菌</span><b>菌棚观察员</b><span>科普系列</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★★</div>
+            <p>显微画面做得干净，数据都标了来源，这点很少见。作为一个做农业的人，看得出他们是真的去过现场，不是只查资料。</p>
+          </article>
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a4" aria-hidden="true">夜</span><b>夜班归人</b><span>放映企划</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★☆</div>
+            <p>在街角看的露天放映，人不多，但氛围很好。散场后导演留下来聊了半小时，这种交流比线上刷弹幕更有意思。</p>
+          </article>
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a2" aria-hidden="true">慢</span><b>慢半拍</b><span>社区留言</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★★</div>
+            <p>喜欢这个平台的一点是评论区真的在讨论内容，不是互相抬杠。写了三条修改建议，作者居然真的回复了，很意外也很感动。</p>
+          </article>
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a3" aria-hidden="true">厂</span><b>小厂导演</b><span>行业观察</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★☆</div>
+            <p>预算那期很敢讲，把很多团队不愿提的问题摆出来了。虽然有些结论我保留意见，但至少给出了讨论的框架。</p>
+          </article>
+          <article class="jm-review">
+            <div class="jm-review-head"><span class="jm-avatar a1" aria-hidden="true">学</span><b>学徒小许</b><span>新人首作</span></div>
+            <div class="jm-stars" aria-hidden="true">★★★★★</div>
+            <p>第一次投稿就收到了两条长评，都在说具体问题。改完第二版之后被推荐到首页，那天真的挺激动的。谢谢剪辑门诊。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 / 合作品牌 / FAQ -->
+  <section class="jm-section jm-anchor" id="jmAux" aria-labelledby="jmAuxTitle">
+    <div class="jm-container">
+      <div class="jm-sec-head">
+        <div>
+          <div class="jm-kicker">SUPPORT · 动态与帮助</div>
+          <h2 id="jmAuxTitle">九一蘑菇麻花企业动态与常见问题</h2>
+        </div>
+        <p class="jm-sec-desc">发布节奏、合作方式与投稿规则集中在这里，如仍有疑问可通过页面底部联系方式反馈。</p>
+      </div>
+
+      <div class="jm-aux-grid">
+        <div class="jm-panel">
+          <h3>企业动态与官方发布</h3>
+          <ul class="jm-news">
+            <li><time datetime="2026-11-20">11-20</time><span><b>麻花手记第三季开机</b>，24 位创作者参与共创，拍摄周期预计六周。</span></li>
+            <li><time datetime="2026-11-18">11-18</time><span><b>官网入口改版上线</b>，新增创作档案检索与专题订阅功能。</span></li>
+            <li><time datetime="2026-11-15">11-15</time><span><b>冬季原创短片征集</b>启动，报名截止 12 月 20 日，入选作品获首页推荐。</span></li>
+            <li><time datetime="2026-11-10">11-10</time><span><b>高清正版片库扩充</b>至 2180 部，全部支持离线下载与授权说明查看。</span></li>
+            <li><time datetime="2026-11-03">11-03</time><span><b>剪辑门诊开放第二期</b>，每周三晚线上答疑，限 40 人报名。</span></li>
+          </ul>
+        </div>
+
+        <div class="jm-panel">
+          <h3>合作品牌与伙伴</h3>
+          <div class="jm-partners">
+            <div class="jm-partner"><i>巷</i><span>巷里书店<small>放映场地合作</small></span></div>
+            <div class="jm-partner"><i>灯</i><span>灯下影像器材<small>设备支持</small></span></div>
+            <div class="jm-partner"><i>菌</i><span>山野菌业<small>拍摄基地</small></span></div>
+            <div class="jm-partner"><i>帧</i><span>帧率后期工作室<small>后期协作</small></span></div>
+          </div>
+          <h3 style="margin-top:22px;">常见问题</h3>
+          <div class="jm-faq">
+            <details>
+              <summary>如何通过九一蘑菇麻花官网入口投稿？</summary>
+              <p>点击页脚「投稿入口」或上方 CTA 按钮填写表单，上传作品链接与 200 字以内的创作说明。初审通常在 5 个工作日内完成，通过后会收到邮件通知。</p>
+            </details>
+            <details>
+              <summary>作品必须独家首发吗？</summary>
+              <p>不强制独家。我们鼓励首播，但也接受已在其他平台发布过的作品，前提是拥有完整版权并授权本平台展示与离线下载。</p>
+            </details>
+            <details>
+              <summary>平台是否提供设备借用？</summary>
+              <p>面向新人首作计划入选者开放，包含基础拍摄套件与收音设备，借用周期 7 至 14 天，需签署借用协议并缴纳押金。</p>
+            </details>
+            <details>
+              <summary>下载的内容可以用于二次创作吗？</summary>
+              <p>片库内容默认仅限个人观看。如需二次创作，请在作品页提交授权申请，注明用途与发布渠道，审核通过后会提供带说明的素材包。</p>
+            </details>
+            <details>
+              <summary>评论为什么没有按热度排序？</summary>
+              <p>我们的排序更看重信息价值，会优先展示包含具体建议、补充资料或不同视角的长评，避免情绪化内容占据前排。</p>
+            </details>
+            <details>
+              <summary>放映企划如何报名？</summary>
+              <p>在专题页点击「报名参与」，填写所在城市与场地信息。每场限 30 位观众，入选后会拉入活动群，统一通知时间与地点。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 CTA 投稿 / 联系 -->
+  <section class="jm-section" aria-labelledby="jmCtaTitle">
+    <div class="jm-container">
+      <div class="jm-cta">
+        <div>
+          <h2 id="jmCtaTitle">你的故事，也值得被拧进这束光里</h2>
+          <p>九一蘑菇麻花官网长期开放投稿与共创报名。无论你是第一次举起镜头，还是已经拍了十年，只要你愿意认真对待一个真实的题目，我们都想看看。</p>
+        </div>
+        <div class="jm-hero-btns" style="margin:0;">
+          <button class="jm-btn jm-btn-amber" type="button" id="jmSubmitOpen">投稿入口</button>
+          <button class="jm-btn jm-btn-ghost" type="button" data-jm-copy>复制官网入口</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="jm-footer">
+  <div class="jm-container">
+    <div class="jm-footer-grid">
+      <div>
+        <div class="jm-footer-brand">
+          <span class="jm-brand-mark" aria-hidden="true">九一</span>
+          <b>九一蘑菇麻花</b>
+        </div>
+        <p>九一蘑菇麻花官方网站 · 原创视频品牌与企业内容门户。我们坚持正版、高清与专业标准，深耕垂直领域，持续运营一个有品质、有口碑的创作者社区。</p>
+        <p>品牌故事 · 企业动态 · 官方发布 · 精品内容</p>
+      </div>
+      <div>
+        <h4>内容入口</h4>
+        <ul>
+          <li><a href="#jmFocus">焦点推荐</a></li>
+          <li><a href="#jmVideos">精选视频</a></li>
+          <li><a href="#jmTopics">专题企划</a></li>
+          <li><a href="#jmEssay">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与共创</h4>
+        <ul>
+          <li><a href="#jmAuthors">创作者矩阵</a></li>
+          <li><a href="#jmAux">投稿规则</a></li>
+          <li><a href="#jmAux">常见问题</a></li>
+          <li><a href="#jmReviews">用户口碑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>合作邮箱：partner@jiuyimogu.example</li>
+          <li>投稿邮箱：submit@jiuyimogu.example</li>
+          <li>办公时间：周一至周五 10:00–19:00</li>
+          <li><button type="button" data-jm-copy style="padding:0;font-size:13px;">分享官网入口</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jm-footer-bottom">
+      <span>© 2026 九一蘑菇麻花 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：麻花ICP备20260091号-1 · 内容均为原创或已获授权</span>
+    </div>
+  </div>
+</footer>
+
+<button class="jm-totop" id="jmToTop" type="button" aria-label="回到顶部">↑</button>
+
+<!-- 评论弹窗 -->
+<div class="jm-modal" id="jmCommentModal" role="dialog" aria-modal="true" aria-labelledby="jmCommentTitle">
+  <div class="jm-modal-box">
+    <button class="jm-close" type="button" data-jm-close aria-label="关闭">×</button>
+    <h3 id="jmCommentTitle">写下你的评论</h3>
+    <p>具体、友善、有信息量的评论会被优先展示。评论将在审核后出现在作品页。</p>
+    <label for="jmCommentName">昵称</label>
+    <input id="jmCommentName" type="text" placeholder="例如：慢半拍">
+    <label for="jmCommentText">评论内容</label>
+    <textarea id="jmCommentText" placeholder="说说这部片子让你注意到的一个细节……"></textarea>
+    <div class="jm-modal-foot">
+      <button class="jm-btn jm-btn-ghost" type="button" data-jm-close>取消</button>
+      <button class="jm-btn jm-btn-primary" type="button" id="jmCommentSend">提交评论</button>
+    </div>
+  </div>
+</div>
+
+<!-- 投稿弹窗 -->
+<div class="jm-modal" id="jmSubmitModal" role="dialog" aria-modal="true" aria-labelledby="jmSubmitTitle">
+  <div class="jm-modal-box">
+    <button class="jm-close" type="button" data-jm-close aria-label="关闭">×</button>
+    <h3 id="jmSubmitTitle">投稿入口</h3>
+    <p>填写基本信息即可进入初审队列。若作品已在其他平台发布，请附上链接；我们更关注题目是否真实、细节是否扎实。</p>
+    <label for="jmSubmitName">创作者昵称</label>
+    <input id="jmSubmitName" type="text" placeholder="你的署名">
+    <label for="jmSubmitTitleInput">作品标题</label>
+    <input id="jmSubmitTitleInput" type="text" placeholder="一句话说清这部片子拍的是什么">
+    <label for="jmSubmitDesc">创作说明（200 字以内）</label>
+    <textarea id="jmSubmitDesc" placeholder="拍摄缘起、周期、遇到的困难，以及你最想保留的一个镜头。"></textarea>
+    <div class="jm-modal-foot">
+      <button class="jm-btn jm-btn-ghost" type="button" data-jm-close>稍后再说</button>
+      <button class="jm-btn jm-btn-amber" type="button" id="jmSubmitSend">提交初审</button>
+    </div>
+  </div>
+</div>
+
+<!-- 作者弹窗 -->
+<div class="jm-modal" id="jmAuthorModal" role="dialog" aria-modal="true" aria-labelledby="jmAuthorModalTitle">
+  <div class="jm-modal-box">
+    <button class="jm-close" type="button" data-jm-close aria-label="关闭">×</button>
+    <h3 id="jmAuthorModalTitle">创作者档案</h3>
+    <p id="jmAuthorModalBody">正在加载档案信息……</p>
+    <div class="jm-modal-foot">
+      <button class="jm-btn jm-btn-primary" type="button" data-jm-close>知道了</button>
+    </div>
+  </div>
+</div>
+
+<div class="jm-toast" id="jmToast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===== 移动端导航 ===== */
+  var burger = document.getElementById('jmBurger');
+  var nav = document.getElementById('jmNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? '收起导航' : '展开导航');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* ===== Toast ===== */
+  var toast = document.getElementById('jmToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-on'); }, 2400);
+  }
+
+  /* ===== 搜索提示 ===== */
+  var searchInput = document.getElementById('jmSearchInput');
+  var searchBtn = document.getElementById('jmSearchBtn');
+  var searchHint = document.getElementById('jmSearchHint');
+  var keywords = ['拧成一股绳','面团与手掌','麻花手记','街角放映厅','新人首作','林见川','陶守一','周砚白','沈澜','许青禾','严知白','剪辑','科普','城市探索','放映'];
+
+  function doSearch(){
+    var q = (searchInput && searchInput.value || '').trim();
+    if(!searchHint) return;
+    if(!q){
+      searchHint.textContent = '请输入关键词，例如「麻花手记」「剪辑」或创作者昵称。';
+      searchHint.classList.add('is-on');
+      return;
+    }
+    var hit = keywords.filter(function(k){ return k.indexOf(q) !== -1 || q.indexOf(k) !== -1; });
+    searchHint.classList.add('is-on');
+    if(hit.length){
+      searchHint.textContent = '找到 ' + hit.length + ' 个相关内容：' + hit.slice(0,6).join('、') + '，可在专题与视频区继续浏览。';
+    }else{
+      searchHint.textContent = '暂未匹配到「' + q + '」的公开内容，可尝试「麻花」「放映」「剪辑」等关键词。';
+    }
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(searchHint && searchHint.classList.contains('is-on')) doSearch();
+    });
+  }
+
+  /* ===== 点赞 / 收藏 ===== */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-jm-like]');
+    if(likeBtn){
+      var numEl = likeBtn.querySelector('[data-jm-num]');
+      var active = likeBtn.classList.toggle('is-active');
+      if(numEl){
+        var base = parseInt(numEl.getAttribute('data-jm-num'), 10) || 0;
+        var cur = parseInt(numEl.textContent, 10) || base;
+        if(isNaN(cur)) cur = base;
+        numEl.textContent = active ? cur + 1 : Math.max(0, cur - 1);
+      }
+      showToast(active ? '已点赞，感谢支持原创内容' : '已取消点赞');
+      return;
+    }
+
+    var saveBtn = e.target.closest('[data-jm-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('is-saved');
+      saveBtn.textContent = saved ? '♥ 已收藏' : '☆ 收藏';
+      showToast(saved ? '已加入你的收藏夹' : '已取消收藏');
+      return;
+    }
+
+    var copyBtn = e.target.closest('[data-jm-copy]');
+    if(copyBtn){
+      var link = 'https://jiuyimogu.example/mahua';
+      function fallbackCopy(){
+        var ta = document.createElement('textarea');
+        ta.value = link;
+        ta.setAttribute('readonly','');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand('copy'); showToast('官网入口已复制，欢迎分享给你的同好'); }
+        catch(err){ showToast('复制未成功，请手动保存页面地址'); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          showToast('官网入口已复制，欢迎分享给你的同好');
+        }).catch(fallbackCopy);
+      }else{
+        fallbackCopy();
+      }
+      return;
+    }
+
+    var commentBtn = e.target.closest('[data-jm-comment]');
+    if(commentBtn){
+      openModal('jmCommentModal');
+      return;
+    }
+
+    var authorBtn = e.target.closest('[data-jm-author]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-jm-author') || '';
+      var body = document.getElementById('jmAuthorModalBody');
+      var title = document.getElementById('jmAuthorModalTitle');
+      var map = {
+        '林见川': '林见川，九一蘑菇联合创始人，原创剧情与人物访谈方向。拍摄前习惯独自走访两周，代表作《拧成一股绳》《旧放映机的最后一夜》。作品共 42 部，粉丝 28.6 万，每周更新。',
+        '陶守一': '陶守一，手艺记录创作者，原餐厅后厨主厨。专拍手艺人的手，注重材料质感与工序细节。代表作《面团与手掌》系列，作品 67 部，粉丝 41.3 万，双周更新。',
+        '周砚白': '周砚白，城市影像创作者，长期在同一机位做定点拍摄。善用环境声代替配乐，作品多与季节和光线有关。作品 35 部，粉丝 19.8 万，每周更新。',
+        '沈澜': '沈澜，后期指导，从事剪辑十一年。擅长把复杂流程拆成可执行步骤，负责平台剪辑门诊与新人辅导。作品 58 部，粉丝 33.5 万，每周更新。',
+        '许青禾': '许青禾，科普作者，生物学背景。把显微影像带进大众视野，每个结论附来源，动画均由团队手绘。作品 29 部，粉丝 22.1 万，双周更新。',
+        '严知白': '严知白，行业观察作者，前影视公司制片。擅长把模糊经验拆成可讨论的问题，数据均标注来源。作品 44 部，粉丝 16.7 万，每月更新。'
+      };
+      if(title) title.textContent = name + ' · 创作者档案';
+      if(body) body.textContent = map[name] || '该创作者的完整档案正在整理中，可先浏览其作品列表。';
+      openModal('jmAuthorModal');
+      return;
+    }
+
+    if(e.target.closest('[data-jm-close]')){
+      closeAllModals();
+    }
+  });
+
+  /* ===== 弹窗控制 ===== */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    closeAllModals();
+    m.classList.add('is-on');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeAllModals(){
+    document.querySelectorAll('.jm-modal').forEach(function(m){ m.classList.remove('is-on'); });
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.jm-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeAllModals();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeAllModals();
+  });
+
+  var commentSend = document.getElementById('jmCommentSend');
+  if(commentSend){
+    commentSend.addEventListener('click', function(){
+      var name = (document.getElementById('jmCommentName') || {}).value || '';
+      var text = (document.getElementById('jmCommentText') || {}).value || '';
+      if(!name.trim() || !text.trim()){
+        showToast('请填写昵称与评论内容');
+        return;
+      }
+      closeAllModals();
+      showToast('评论已提交，审核通过后会出现在作品页');
+      document.getElementById('jmCommentText').value = '';
+    });
+  }
+
+  var submitOpen = document.getElementById('jmSubmitOpen');
+  if(submitOpen){
+    submitOpen.addEventListener('click', function(){ openModal('jmSubmitModal'); });
+  }
+  var submitSend = document.getElementById('jmSubmitSend');
+  if(submitSend){
+    submitSend.addEventListener('click', function(){
+      var n = (document.getElementById('jmSubmitName') || {}).value || '';
+      var t = (document.getElementById('jmSubmitTitleInput') || {}).value || '';
+      var d = (document.getElementById('jmSubmitDesc') || {}).value || '';
+      if(!n.trim() || !t.trim() || !d.trim()){
+        showToast('请完整填写昵称、标题与创作说明');
+        return;
+      }
+      closeAllModals();
+      showToast('投稿已进入初审队列，5 个工作日内邮件通知');
+      document.getElementById('jmSubmitTitleInput').value = '';
+      document.getElementById('jmSubmitDesc').value = '';
+    });
+  }
+
+  /* ===== 回到顶部 ===== */
+  var toTop = document.getElementById('jmToTop');
+  window.addEventListener('scroll', function(){
+    if(!toTop) return;
+    if(window.scrollY > 520) toTop.classList.add('is-on');
+    else toTop.classList.remove('is-on');
+  }, {passive:true});
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ===== 数字滚动 ===== */
+  var counters = document.querySelectorAll('[data-jm-count]');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-jm-count'), 10) || 0;
+      var start = null;
+      var dur = 1100;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(target * eased).toLocaleString('en-US');
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString('en-US');
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if(counters.length){
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting) runCounters(); });
+      }, {threshold:.3});
+      counters.forEach(function(c){ io.observe(c); });
+    }else{
+      runCounters();
+    }
+  }
+})();
+</script>
+
+</body>
+                </html>
